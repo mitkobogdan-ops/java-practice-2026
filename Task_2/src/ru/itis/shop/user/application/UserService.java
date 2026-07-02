@@ -25,4 +25,8 @@ public class UserService {
             return userOptional.get().getPassword().equals(password);
         } else return false;
     }
+
+    public UserRepository getUserRepository() {
+        return userRepository;
+    }
 }

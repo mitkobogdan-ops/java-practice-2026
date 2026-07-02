@@ -56,6 +56,24 @@ public class UserFileRepository implements UserRepository {
 
     @Override
     public Optional<User> findById(String id) {
-        return Optional.empty();
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))){
+            String line = reader.readLine();
+
+            while (line != null) {
+
+                User user = userMapper.fromLine(line);
+
+                if (user.getId().equals(id)) {
+                    return Optional.of(user);
+                }
+
+                line = reader.readLine();
+            }
+
+            return Optional.empty();
+
+        } catch (IOException e) {
+            throw new IllegalStateException(e);
+        }
     }
 }

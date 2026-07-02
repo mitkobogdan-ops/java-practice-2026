@@ -34,14 +34,14 @@ public class UserConsoleOperations {
         }
     }
 
-    private static void printUserMenu() {
+    protected void printUserMenu() {
         System.out.println("1. Регистрация пользователя");
         System.out.println("2. Вход в систему");
         System.out.println("3. Найти пользователя по id");
         System.out.println("0. Выход");
     }
 
-    private void signUp() {
+    protected void signUp() {
         System.out.println("Сейчас будем регистрировать пользователя");
         System.out.println("Введите email:");
         String email = scanner.nextLine();
@@ -54,7 +54,7 @@ public class UserConsoleOperations {
     }
 
 
-    private void signIn() {
+    protected void signIn() {
         System.out.println("Вы можете войти в приложение");
         System.out.println("Введите email:");
         String email = scanner.nextLine();
