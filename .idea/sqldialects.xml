@@ -2,5 +2,9 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Task_3/Schema.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Task_5/resources/data.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Task_5/resources/schema.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Task_6/resources/data.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Task_6/resources/schema.sql" dialect="GenericSQL" />
   </component>
 </project>
