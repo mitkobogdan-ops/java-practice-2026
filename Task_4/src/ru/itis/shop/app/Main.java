@@ -8,7 +8,7 @@ import ru.itis.shop.user.infrastructure.persistence.UserRepositoryJdbcImpl;
 
 public class Main {
 
-    private final static String USER = "123";
+    private final static String USER = "aaa";
     private final static String PASSWORD = "123";
     private final static String LINK = "jdbc:postgresql://localhost:5432/postgres";
     public static void main(String[] args) {
