@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 public class Main {
     public static void main(String[] args) {
         DataSource dataSource  = new DriverManagerDataSource("jdbc:postgresql://localhost:5432/postgres",
-                "123", "123");
+                "aaa", "123");
 
         UserRepository userRepository = new UserRepositoryJdbcImpl(dataSource);
 
