@@ -17,7 +17,7 @@ public class Main {
 
         DataSource dataSource = new DriverManagerDataSource(
                 properties.getProperty("jdbc:postgresql://localhost:5432/postgres"),
-                properties.getProperty("123"),
+                properties.getProperty("aaa"),
                 properties.getProperty("123"));
 
         UserRepository userRepository = new UserRepositoryJdbcImpl(dataSource);
